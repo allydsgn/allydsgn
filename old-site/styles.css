@@ -1,0 +1,138 @@
+h1 {
+    color: black;
+    font-family: Dosis, serif;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px;
+    font-size: 32pt;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+#button a {
+    text-decoration: none;
+    color: dimgray;
+}
+
+p {
+    color: dimgray;
+}
+
+#buttoncontainer {
+    width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+#button {
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    font-family: Josefin Sans, sans-serif;
+    letter-spacing: 3px;
+    margin: 0px 25px;
+    font-size: 16pt;
+}
+
+#currentpage {
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    font-family: Josefin Sans, sans-serif;
+    letter-spacing: 3px;
+    margin: 0px 25px;
+    font-size: 16pt;
+}
+
+#currentpage a {
+  text-decoration: none;
+  color: #FDA688;
+}
+
+.sliding-u-l-r-l {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 10px;
+}
+.sliding-u-l-r-l:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    transition: width 0s ease, background .5s ease;
+}
+.sliding-u-l-r-l:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background: #FDA688;
+    transition: width .5s ease;
+}
+.sliding-u-l-r-l:hover:before {
+    width: 100%;
+    background: #FDA688;
+    transition: width .5s ease;
+}
+.sliding-u-l-r-l:hover:after {
+    width: 100%;
+    width: 100%;
+    background: transparent;
+    transition: all 0s ease;
+}
+#container {
+    width: 900px;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#corner1 {
+    background-image: url(images/Corner-01.png);
+    background-size: cover;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 300px;
+    height: 300px;
+}
+
+#corner2 {
+    background-image: url(images/Corner-02.png);
+    background-size: cover;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    width: 300px;
+    height: 300px;
+}
+
+#corner3 {
+    background-image: url(images/Corner-03.png);
+    background-size: cover;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    width: 300px;
+    height: 300px;
+}
+
+#corner4 {
+    background-image: url(images/Corner-04.png);
+    background-size: cover;
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    width: 300px;
+    height: 300px;
+}
